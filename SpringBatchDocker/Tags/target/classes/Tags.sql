@@ -1,0 +1,11 @@
+
+DROP DATABASE IF EXISTS `Tags`;
+CREATE DATABASE `Tags`;
+USE `Tags`;
+CREATE TABLE Tag (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    movie_id BIGINT NOT NULL,
+    tag VARCHAR(255),
+    timestamp TIMESTAMP
+);
